@@ -1,12 +1,5 @@
 # Enterprise Air Quality Monitoring & Forecasting Pipeline
 
-![Python](https://img.shields.io/badge/Python-3.11-blue)
-![Airflow](https://img.shields.io/badge/Apache_Airflow-2.8.1-green)
-![Docker](https://img.shields.io/badge/Docker-Containerized-blue)
-![XGBoost](https://img.shields.io/badge/XGBoost-R²=0.9987-brightgreen)
-![dbt](https://img.shields.io/badge/dbt-1.12.3-orange)
-![License](https://img.shields.io/badge/License-MIT-yellow)
-
 A production-grade, end-to-end data engineering and ML forecasting system that monitors real-time air quality across 5 global cities using a Medallion Architecture on AWS S3, Apache Airflow orchestration, dbt data quality tests, and XGBoost ML forecasting.
 
 ---
