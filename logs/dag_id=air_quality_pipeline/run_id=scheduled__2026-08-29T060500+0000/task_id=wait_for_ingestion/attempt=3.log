@@ -1,0 +1,2 @@
+[2026-08-30T15:31:41.496+0000] {taskinstance.py:1946} INFO - Dependencies not met for <TaskInstance: air_quality_pipeline.wait_for_ingestion scheduled__2026-08-29T06:05:00+00:00 [failed]>, dependency 'Task Instance State' FAILED: Task is in the 'failed' state.
+[2026-08-30T15:31:41.537+0000] {local_task_job_runner.py:160} INFO - Task is not able to be run

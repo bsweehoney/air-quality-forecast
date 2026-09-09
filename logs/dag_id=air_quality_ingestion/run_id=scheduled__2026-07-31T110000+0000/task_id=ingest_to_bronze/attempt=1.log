@@ -1,0 +1,23 @@
+[2026-07-31T21:27:45.514+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: air_quality_ingestion.ingest_to_bronze scheduled__2026-07-31T11:00:00+00:00 [queued]>
+[2026-07-31T21:27:45.593+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: air_quality_ingestion.ingest_to_bronze scheduled__2026-07-31T11:00:00+00:00 [queued]>
+[2026-07-31T21:27:45.639+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 4
+[2026-07-31T21:27:45.854+0000] {taskinstance.py:2191} INFO - Executing <Task(PythonOperator): ingest_to_bronze> on 2026-07-31 11:00:00+00:00
+[2026-07-31T21:27:45.966+0000] {standard_task_runner.py:60} INFO - Started process 947 to run task
+[2026-07-31T21:27:45.975+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'air_quality_ingestion', 'ingest_to_bronze', 'scheduled__2026-07-31T11:00:00+00:00', '--job-id', '11', '--raw', '--subdir', 'DAGS_FOLDER/ingestion_dag.py', '--cfg-path', '/tmp/tmp9z_0vsdg']
+[2026-07-31T21:27:46.088+0000] {standard_task_runner.py:88} INFO - Job 11: Subtask ingest_to_bronze
+[2026-07-31T21:27:46.501+0000] {task_command.py:423} INFO - Running <TaskInstance: air_quality_ingestion.ingest_to_bronze scheduled__2026-07-31T11:00:00+00:00 [running]> on host cd53ba4eefa8
+[2026-07-31T21:27:46.935+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='air_quality_ingestion' AIRFLOW_CTX_TASK_ID='ingest_to_bronze' AIRFLOW_CTX_EXECUTION_DATE='2026-07-31T11:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2026-07-31T11:00:00+00:00'
+[2026-07-31T21:27:47.893+0000] {logging_mixin.py:188} INFO - Created bucket: bronze-air-quality
+[2026-07-31T21:27:47.917+0000] {logging_mixin.py:188} INFO - Created bucket: silver-air-quality
+[2026-07-31T21:27:47.937+0000] {logging_mixin.py:188} INFO - Created bucket: gold-air-quality
+[2026-07-31T21:27:48.050+0000] {logging_mixin.py:188} INFO - ✗ new york: HTTPSConnectionPool(host='api.waqi.info', port=443): Max retries exceeded with url: /feed/new%20york/?token=your_aqicn_key_here (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7c1f20a9ff50>: Failed to establish a new connection: [Errno 111] Connection refused'))
+[2026-07-31T21:27:48.126+0000] {logging_mixin.py:188} INFO - ✗ london: HTTPSConnectionPool(host='api.waqi.info', port=443): Max retries exceeded with url: /feed/london/?token=your_aqicn_key_here (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7c1f20aa9bd0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+[2026-07-31T21:27:48.289+0000] {logging_mixin.py:188} INFO - ✗ beijing: HTTPSConnectionPool(host='api.waqi.info', port=443): Max retries exceeded with url: /feed/beijing/?token=your_aqicn_key_here (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7c1f20ab41d0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+[2026-07-31T21:27:48.356+0000] {logging_mixin.py:188} INFO - ✗ delhi: HTTPSConnectionPool(host='api.waqi.info', port=443): Max retries exceeded with url: /feed/delhi/?token=your_aqicn_key_here (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7c1f23373690>: Failed to establish a new connection: [Errno 111] Connection refused'))
+[2026-07-31T21:27:48.451+0000] {logging_mixin.py:188} INFO - ✗ sydney: HTTPSConnectionPool(host='api.waqi.info', port=443): Max retries exceeded with url: /feed/sydney/?token=your_aqicn_key_here (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7c1f20ab4f90>: Failed to establish a new connection: [Errno 111] Connection refused'))
+[2026-07-31T21:27:48.455+0000] {logging_mixin.py:188} INFO - 
+Total records ingested: 0
+[2026-07-31T21:27:48.457+0000] {python.py:201} INFO - Done. Returned value was: None
+[2026-07-31T21:27:48.508+0000] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=air_quality_ingestion, task_id=ingest_to_bronze, execution_date=20260731T110000, start_date=20260731T212745, end_date=20260731T212748
+[2026-07-31T21:27:48.635+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2026-07-31T21:27:48.694+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check

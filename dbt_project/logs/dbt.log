@@ -1,0 +1,27 @@
+[0m14:00:12.399015 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B57FA6D850>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B57F997F50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B57ADB1A50>]}
+
+
+============================== 14:00:12.399015 | 59fb407a-b83b-43fb-8055-1f274d9837ef ==============================
+[0m14:00:12.399015 [info ] [MainThread]: Running with dbt=1.12.3
+[0m14:00:12.409297 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'maximum_seed_size_mib': '1', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\sweehoney\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'indirect_selection': 'eager', 'hints_enabled': 'True', 'invocation_command': 'dbt init air_quality --skip-profile-setup', 'use_experimental_parser': 'False', 'use_colors': 'True', 'log_path': 'logs'}
+[0m14:00:12.441519 [debug] [MainThread]: Starter project path: C:\Users\sweehoney\air-quality-forecast\venv\Lib\site-packages\dbt\include\starter_project
+[0m14:00:12.565664 [info ] [MainThread]: Your new dbt project "air_quality" was created!
+Initialized new project in C:\Users\sweehoney\air-quality-forecast\dbt_project\air_quality\air_quality
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m14:00:12.565664 [debug] [MainThread]: Command `dbt init` succeeded at 14:00:12.565664 after 0.33 seconds
+[0m14:00:12.565664 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B57FA6F110>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B57FA6C610>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B57F997E10>]}
+[0m14:00:12.565664 [debug] [MainThread]: Flushing usage events
+[0m14:00:12.772817 [debug] [MainThread]: An error was encountered while trying to flush usage events

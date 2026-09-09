@@ -1,0 +1,335 @@
+[2026-08-09T02:29:05.892+0000] {processor.py:161} INFO - Started process (PID=19675) to work on /opt/airflow/dags/spark_pipeline_dag.py
+[2026-08-09T02:29:05.902+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/spark_pipeline_dag.py for tasks to queue
+[2026-08-09T02:29:05.908+0000] {logging_mixin.py:188} INFO - [2026-08-09T02:29:05.908+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/spark_pipeline_dag.py
+[2026-08-09T02:29:06.043+0000] {processor.py:840} INFO - DAG(s) 'air_quality_pipeline' retrieved from /opt/airflow/dags/spark_pipeline_dag.py
+[2026-08-09T02:29:09.640+0000] {logging_mixin.py:188} INFO - [2026-08-09T02:29:09.639+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-08-09T02:29:09.719+0000] {logging_mixin.py:188} INFO - [2026-08-09T02:29:09.719+0000] {dag.py:3823} INFO - Setting next_dagrun for air_quality_pipeline to 2026-08-09 01:05:00+00:00, run_after=2026-08-09 02:05:00+00:00
+[2026-08-09T02:29:09.890+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/spark_pipeline_dag.py took 4.012 seconds
+[2026-08-09T02:29:10.267+0000] {processor.py:161} INFO - Started process (PID=19685) to work on /opt/airflow/dags/spark_pipeline_dag.py
+[2026-08-09T02:29:10.281+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/spark_pipeline_dag.py for tasks to queue
+[2026-08-09T02:29:10.288+0000] {logging_mixin.py:188} INFO - [2026-08-09T02:29:10.287+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/spark_pipeline_dag.py
+[2026-08-09T02:29:11.186+0000] {processor.py:840} INFO - DAG(s) 'air_quality_pipeline' retrieved from /opt/airflow/dags/spark_pipeline_dag.py
+[2026-08-09T02:29:11.325+0000] {logging_mixin.py:188} INFO - [2026-08-09T02:29:11.325+0000] {taskinstance.py:2700} ERROR - {'DAG Id': 'air_quality_pipeline', 'Task Id': 'wait_for_ingestion', 'Run Id': 'scheduled__2026-08-08T08:05:00+00:00', 'Hostname': '6a0525c4c718'}
+[2026-08-09T02:29:11.434+0000] {logging_mixin.py:188} INFO - [2026-08-09T02:29:11.433+0000] {taskinstance.py:1138} INFO - Marking task as UP_FOR_RETRY. dag_id=air_quality_pipeline, task_id=wait_for_ingestion, execution_date=20260808T080500, start_date=20260808T114731, end_date=20260809T022911
+[2026-08-09T02:29:11.513+0000] {processor.py:791} INFO - Executed failure callback for <TaskInstance: air_quality_pipeline.wait_for_ingestion scheduled__2026-08-08T08:05:00+00:00 [up_for_retry]> in state up_for_retry
+[2026-08-09T02:29:11.638+0000] {logging_mixin.py:188} INFO - [2026-08-09T02:29:11.631+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-08-09T02:29:12.001+0000] {logging_mixin.py:188} INFO - [2026-08-09T02:29:12.001+0000] {dag.py:3823} INFO - Setting next_dagrun for air_quality_pipeline to 2026-08-09 02:05:00+00:00, run_after=2026-08-09 03:05:00+00:00
+[2026-08-09T02:29:12.087+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/spark_pipeline_dag.py took 1.828 seconds
+[2026-08-09T02:29:42.703+0000] {processor.py:161} INFO - Started process (PID=19701) to work on /opt/airflow/dags/spark_pipeline_dag.py
+[2026-08-09T02:29:42.707+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/spark_pipeline_dag.py for tasks to queue
+[2026-08-09T02:29:42.711+0000] {logging_mixin.py:188} INFO - [2026-08-09T02:29:42.709+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/spark_pipeline_dag.py
+[2026-08-09T02:29:42.768+0000] {processor.py:840} INFO - DAG(s) 'air_quality_pipeline' retrieved from /opt/airflow/dags/spark_pipeline_dag.py
+[2026-08-09T02:29:42.842+0000] {logging_mixin.py:188} INFO - [2026-08-09T02:29:42.841+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-08-09T02:29:42.923+0000] {logging_mixin.py:188} INFO - [2026-08-09T02:29:42.923+0000] {dag.py:3823} INFO - Setting next_dagrun for air_quality_pipeline to 2026-08-09 02:05:00+00:00, run_after=2026-08-09 03:05:00+00:00
+[2026-08-09T02:29:42.996+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/spark_pipeline_dag.py took 0.303 seconds
+[2026-08-09T02:30:13.306+0000] {processor.py:161} INFO - Started process (PID=19711) to work on /opt/airflow/dags/spark_pipeline_dag.py
+[2026-08-09T02:30:13.307+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/spark_pipeline_dag.py for tasks to queue
+[2026-08-09T02:30:13.309+0000] {logging_mixin.py:188} INFO - [2026-08-09T02:30:13.308+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/spark_pipeline_dag.py
+[2026-08-09T02:30:13.335+0000] {processor.py:840} INFO - DAG(s) 'air_quality_pipeline' retrieved from /opt/airflow/dags/spark_pipeline_dag.py
+[2026-08-09T02:30:13.358+0000] {logging_mixin.py:188} INFO - [2026-08-09T02:30:13.358+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-08-09T02:30:13.377+0000] {logging_mixin.py:188} INFO - [2026-08-09T02:30:13.377+0000] {dag.py:3823} INFO - Setting next_dagrun for air_quality_pipeline to 2026-08-09 02:05:00+00:00, run_after=2026-08-09 03:05:00+00:00
+[2026-08-09T02:30:13.393+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/spark_pipeline_dag.py took 0.090 seconds
+[2026-08-09T02:30:43.644+0000] {processor.py:161} INFO - Started process (PID=19721) to work on /opt/airflow/dags/spark_pipeline_dag.py
+[2026-08-09T02:30:43.646+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/spark_pipeline_dag.py for tasks to queue
+[2026-08-09T02:30:43.649+0000] {logging_mixin.py:188} INFO - [2026-08-09T02:30:43.648+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/spark_pipeline_dag.py
+[2026-08-09T02:30:43.699+0000] {processor.py:840} INFO - DAG(s) 'air_quality_pipeline' retrieved from /opt/airflow/dags/spark_pipeline_dag.py
+[2026-08-09T02:30:43.755+0000] {logging_mixin.py:188} INFO - [2026-08-09T02:30:43.755+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-08-09T02:30:43.848+0000] {logging_mixin.py:188} INFO - [2026-08-09T02:30:43.847+0000] {dag.py:3823} INFO - Setting next_dagrun for air_quality_pipeline to 2026-08-09 02:05:00+00:00, run_after=2026-08-09 03:05:00+00:00
+[2026-08-09T02:30:43.878+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/spark_pipeline_dag.py took 0.238 seconds
+[2026-08-09T02:31:14.261+0000] {processor.py:161} INFO - Started process (PID=19731) to work on /opt/airflow/dags/spark_pipeline_dag.py
+[2026-08-09T02:31:14.266+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/spark_pipeline_dag.py for tasks to queue
+[2026-08-09T02:31:14.267+0000] {logging_mixin.py:188} INFO - [2026-08-09T02:31:14.267+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/spark_pipeline_dag.py
+[2026-08-09T02:31:14.306+0000] {processor.py:840} INFO - DAG(s) 'air_quality_pipeline' retrieved from /opt/airflow/dags/spark_pipeline_dag.py
+[2026-08-09T02:31:14.328+0000] {logging_mixin.py:188} INFO - [2026-08-09T02:31:14.328+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-08-09T02:31:14.350+0000] {logging_mixin.py:188} INFO - [2026-08-09T02:31:14.350+0000] {dag.py:3823} INFO - Setting next_dagrun for air_quality_pipeline to 2026-08-09 02:05:00+00:00, run_after=2026-08-09 03:05:00+00:00
+[2026-08-09T02:31:14.370+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/spark_pipeline_dag.py took 0.111 seconds
+[2026-08-09T02:31:44.660+0000] {processor.py:161} INFO - Started process (PID=19741) to work on /opt/airflow/dags/spark_pipeline_dag.py
+[2026-08-09T02:31:44.662+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/spark_pipeline_dag.py for tasks to queue
+[2026-08-09T02:31:44.666+0000] {logging_mixin.py:188} INFO - [2026-08-09T02:31:44.665+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/spark_pipeline_dag.py
+[2026-08-09T02:31:44.691+0000] {processor.py:840} INFO - DAG(s) 'air_quality_pipeline' retrieved from /opt/airflow/dags/spark_pipeline_dag.py
+[2026-08-09T02:31:44.718+0000] {logging_mixin.py:188} INFO - [2026-08-09T02:31:44.717+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-08-09T02:31:44.737+0000] {logging_mixin.py:188} INFO - [2026-08-09T02:31:44.737+0000] {dag.py:3823} INFO - Setting next_dagrun for air_quality_pipeline to 2026-08-09 02:05:00+00:00, run_after=2026-08-09 03:05:00+00:00
+[2026-08-09T02:31:44.766+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/spark_pipeline_dag.py took 0.108 seconds
+[2026-08-09T02:32:15.029+0000] {processor.py:161} INFO - Started process (PID=19751) to work on /opt/airflow/dags/spark_pipeline_dag.py
+[2026-08-09T02:32:15.031+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/spark_pipeline_dag.py for tasks to queue
+[2026-08-09T02:32:15.033+0000] {logging_mixin.py:188} INFO - [2026-08-09T02:32:15.032+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/spark_pipeline_dag.py
+[2026-08-09T02:32:15.057+0000] {processor.py:840} INFO - DAG(s) 'air_quality_pipeline' retrieved from /opt/airflow/dags/spark_pipeline_dag.py
+[2026-08-09T02:32:15.115+0000] {logging_mixin.py:188} INFO - [2026-08-09T02:32:15.114+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-08-09T02:32:15.138+0000] {logging_mixin.py:188} INFO - [2026-08-09T02:32:15.138+0000] {dag.py:3823} INFO - Setting next_dagrun for air_quality_pipeline to 2026-08-09 02:05:00+00:00, run_after=2026-08-09 03:05:00+00:00
+[2026-08-09T02:32:15.156+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/spark_pipeline_dag.py took 0.131 seconds
+[2026-08-09T02:32:45.340+0000] {processor.py:161} INFO - Started process (PID=19761) to work on /opt/airflow/dags/spark_pipeline_dag.py
+[2026-08-09T02:32:45.342+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/spark_pipeline_dag.py for tasks to queue
+[2026-08-09T02:32:45.344+0000] {logging_mixin.py:188} INFO - [2026-08-09T02:32:45.343+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/spark_pipeline_dag.py
+[2026-08-09T02:32:45.368+0000] {processor.py:840} INFO - DAG(s) 'air_quality_pipeline' retrieved from /opt/airflow/dags/spark_pipeline_dag.py
+[2026-08-09T02:32:45.388+0000] {logging_mixin.py:188} INFO - [2026-08-09T02:32:45.388+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-08-09T02:32:45.415+0000] {logging_mixin.py:188} INFO - [2026-08-09T02:32:45.415+0000] {dag.py:3823} INFO - Setting next_dagrun for air_quality_pipeline to 2026-08-09 02:05:00+00:00, run_after=2026-08-09 03:05:00+00:00
+[2026-08-09T02:32:45.435+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/spark_pipeline_dag.py took 0.099 seconds
+[2026-08-09T02:33:15.890+0000] {processor.py:161} INFO - Started process (PID=19771) to work on /opt/airflow/dags/spark_pipeline_dag.py
+[2026-08-09T02:33:15.892+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/spark_pipeline_dag.py for tasks to queue
+[2026-08-09T02:33:15.893+0000] {logging_mixin.py:188} INFO - [2026-08-09T02:33:15.892+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/spark_pipeline_dag.py
+[2026-08-09T02:33:15.926+0000] {processor.py:840} INFO - DAG(s) 'air_quality_pipeline' retrieved from /opt/airflow/dags/spark_pipeline_dag.py
+[2026-08-09T02:33:15.950+0000] {logging_mixin.py:188} INFO - [2026-08-09T02:33:15.949+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-08-09T02:33:15.976+0000] {logging_mixin.py:188} INFO - [2026-08-09T02:33:15.976+0000] {dag.py:3823} INFO - Setting next_dagrun for air_quality_pipeline to 2026-08-09 02:05:00+00:00, run_after=2026-08-09 03:05:00+00:00
+[2026-08-09T02:33:16.011+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/spark_pipeline_dag.py took 0.125 seconds
+[2026-08-09T02:33:46.351+0000] {processor.py:161} INFO - Started process (PID=19781) to work on /opt/airflow/dags/spark_pipeline_dag.py
+[2026-08-09T02:33:46.352+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/spark_pipeline_dag.py for tasks to queue
+[2026-08-09T02:33:46.353+0000] {logging_mixin.py:188} INFO - [2026-08-09T02:33:46.353+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/spark_pipeline_dag.py
+[2026-08-09T02:33:46.381+0000] {processor.py:840} INFO - DAG(s) 'air_quality_pipeline' retrieved from /opt/airflow/dags/spark_pipeline_dag.py
+[2026-08-09T02:33:46.402+0000] {logging_mixin.py:188} INFO - [2026-08-09T02:33:46.402+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-08-09T02:33:46.427+0000] {logging_mixin.py:188} INFO - [2026-08-09T02:33:46.427+0000] {dag.py:3823} INFO - Setting next_dagrun for air_quality_pipeline to 2026-08-09 02:05:00+00:00, run_after=2026-08-09 03:05:00+00:00
+[2026-08-09T02:33:46.445+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/spark_pipeline_dag.py took 0.097 seconds
+[2026-08-09T02:34:16.631+0000] {processor.py:161} INFO - Started process (PID=19791) to work on /opt/airflow/dags/spark_pipeline_dag.py
+[2026-08-09T02:34:16.633+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/spark_pipeline_dag.py for tasks to queue
+[2026-08-09T02:34:16.635+0000] {logging_mixin.py:188} INFO - [2026-08-09T02:34:16.634+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/spark_pipeline_dag.py
+[2026-08-09T02:34:16.673+0000] {processor.py:840} INFO - DAG(s) 'air_quality_pipeline' retrieved from /opt/airflow/dags/spark_pipeline_dag.py
+[2026-08-09T02:34:16.725+0000] {logging_mixin.py:188} INFO - [2026-08-09T02:34:16.725+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-08-09T02:34:16.753+0000] {logging_mixin.py:188} INFO - [2026-08-09T02:34:16.753+0000] {dag.py:3823} INFO - Setting next_dagrun for air_quality_pipeline to 2026-08-09 02:05:00+00:00, run_after=2026-08-09 03:05:00+00:00
+[2026-08-09T02:34:16.779+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/spark_pipeline_dag.py took 0.154 seconds
+[2026-08-09T02:34:47.389+0000] {processor.py:161} INFO - Started process (PID=19803) to work on /opt/airflow/dags/spark_pipeline_dag.py
+[2026-08-09T02:34:47.392+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/spark_pipeline_dag.py for tasks to queue
+[2026-08-09T02:34:47.399+0000] {logging_mixin.py:188} INFO - [2026-08-09T02:34:47.398+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/spark_pipeline_dag.py
+[2026-08-09T02:34:47.452+0000] {processor.py:840} INFO - DAG(s) 'air_quality_pipeline' retrieved from /opt/airflow/dags/spark_pipeline_dag.py
+[2026-08-09T02:34:47.511+0000] {logging_mixin.py:188} INFO - [2026-08-09T02:34:47.511+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-08-09T02:34:47.545+0000] {logging_mixin.py:188} INFO - [2026-08-09T02:34:47.544+0000] {dag.py:3823} INFO - Setting next_dagrun for air_quality_pipeline to 2026-08-09 02:05:00+00:00, run_after=2026-08-09 03:05:00+00:00
+[2026-08-09T02:34:47.591+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/spark_pipeline_dag.py took 0.210 seconds
+[2026-08-09T02:35:17.737+0000] {processor.py:161} INFO - Started process (PID=19813) to work on /opt/airflow/dags/spark_pipeline_dag.py
+[2026-08-09T02:35:17.738+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/spark_pipeline_dag.py for tasks to queue
+[2026-08-09T02:35:17.740+0000] {logging_mixin.py:188} INFO - [2026-08-09T02:35:17.739+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/spark_pipeline_dag.py
+[2026-08-09T02:35:17.785+0000] {processor.py:840} INFO - DAG(s) 'air_quality_pipeline' retrieved from /opt/airflow/dags/spark_pipeline_dag.py
+[2026-08-09T02:35:17.815+0000] {logging_mixin.py:188} INFO - [2026-08-09T02:35:17.815+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-08-09T02:35:17.834+0000] {logging_mixin.py:188} INFO - [2026-08-09T02:35:17.833+0000] {dag.py:3823} INFO - Setting next_dagrun for air_quality_pipeline to 2026-08-09 02:05:00+00:00, run_after=2026-08-09 03:05:00+00:00
+[2026-08-09T02:35:17.852+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/spark_pipeline_dag.py took 0.117 seconds
+[2026-08-09T02:35:48.167+0000] {processor.py:161} INFO - Started process (PID=19823) to work on /opt/airflow/dags/spark_pipeline_dag.py
+[2026-08-09T02:35:48.169+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/spark_pipeline_dag.py for tasks to queue
+[2026-08-09T02:35:48.170+0000] {logging_mixin.py:188} INFO - [2026-08-09T02:35:48.169+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/spark_pipeline_dag.py
+[2026-08-09T02:35:48.223+0000] {processor.py:840} INFO - DAG(s) 'air_quality_pipeline' retrieved from /opt/airflow/dags/spark_pipeline_dag.py
+[2026-08-09T02:35:48.249+0000] {logging_mixin.py:188} INFO - [2026-08-09T02:35:48.249+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-08-09T02:35:48.273+0000] {logging_mixin.py:188} INFO - [2026-08-09T02:35:48.273+0000] {dag.py:3823} INFO - Setting next_dagrun for air_quality_pipeline to 2026-08-09 02:05:00+00:00, run_after=2026-08-09 03:05:00+00:00
+[2026-08-09T02:35:48.295+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/spark_pipeline_dag.py took 0.132 seconds
+[2026-08-09T02:36:18.616+0000] {processor.py:161} INFO - Started process (PID=19833) to work on /opt/airflow/dags/spark_pipeline_dag.py
+[2026-08-09T02:36:18.617+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/spark_pipeline_dag.py for tasks to queue
+[2026-08-09T02:36:18.619+0000] {logging_mixin.py:188} INFO - [2026-08-09T02:36:18.618+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/spark_pipeline_dag.py
+[2026-08-09T02:36:18.641+0000] {processor.py:840} INFO - DAG(s) 'air_quality_pipeline' retrieved from /opt/airflow/dags/spark_pipeline_dag.py
+[2026-08-09T02:36:18.667+0000] {logging_mixin.py:188} INFO - [2026-08-09T02:36:18.667+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-08-09T02:36:18.692+0000] {logging_mixin.py:188} INFO - [2026-08-09T02:36:18.692+0000] {dag.py:3823} INFO - Setting next_dagrun for air_quality_pipeline to 2026-08-09 02:05:00+00:00, run_after=2026-08-09 03:05:00+00:00
+[2026-08-09T02:36:18.720+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/spark_pipeline_dag.py took 0.108 seconds
+[2026-08-09T02:36:49.107+0000] {processor.py:161} INFO - Started process (PID=19843) to work on /opt/airflow/dags/spark_pipeline_dag.py
+[2026-08-09T02:36:49.108+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/spark_pipeline_dag.py for tasks to queue
+[2026-08-09T02:36:49.109+0000] {logging_mixin.py:188} INFO - [2026-08-09T02:36:49.109+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/spark_pipeline_dag.py
+[2026-08-09T02:36:49.153+0000] {processor.py:840} INFO - DAG(s) 'air_quality_pipeline' retrieved from /opt/airflow/dags/spark_pipeline_dag.py
+[2026-08-09T02:36:49.191+0000] {logging_mixin.py:188} INFO - [2026-08-09T02:36:49.191+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-08-09T02:36:49.240+0000] {logging_mixin.py:188} INFO - [2026-08-09T02:36:49.240+0000] {dag.py:3823} INFO - Setting next_dagrun for air_quality_pipeline to 2026-08-09 02:05:00+00:00, run_after=2026-08-09 03:05:00+00:00
+[2026-08-09T02:36:49.297+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/spark_pipeline_dag.py took 0.193 seconds
+[2026-08-09T02:37:19.633+0000] {processor.py:161} INFO - Started process (PID=19853) to work on /opt/airflow/dags/spark_pipeline_dag.py
+[2026-08-09T02:37:19.634+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/spark_pipeline_dag.py for tasks to queue
+[2026-08-09T02:37:19.636+0000] {logging_mixin.py:188} INFO - [2026-08-09T02:37:19.635+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/spark_pipeline_dag.py
+[2026-08-09T02:37:19.676+0000] {processor.py:840} INFO - DAG(s) 'air_quality_pipeline' retrieved from /opt/airflow/dags/spark_pipeline_dag.py
+[2026-08-09T02:37:19.703+0000] {logging_mixin.py:188} INFO - [2026-08-09T02:37:19.703+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-08-09T02:37:19.732+0000] {logging_mixin.py:188} INFO - [2026-08-09T02:37:19.732+0000] {dag.py:3823} INFO - Setting next_dagrun for air_quality_pipeline to 2026-08-09 02:05:00+00:00, run_after=2026-08-09 03:05:00+00:00
+[2026-08-09T02:37:19.757+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/spark_pipeline_dag.py took 0.127 seconds
+[2026-08-09T02:37:50.120+0000] {processor.py:161} INFO - Started process (PID=19863) to work on /opt/airflow/dags/spark_pipeline_dag.py
+[2026-08-09T02:37:50.126+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/spark_pipeline_dag.py for tasks to queue
+[2026-08-09T02:37:50.128+0000] {logging_mixin.py:188} INFO - [2026-08-09T02:37:50.127+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/spark_pipeline_dag.py
+[2026-08-09T02:37:50.170+0000] {processor.py:840} INFO - DAG(s) 'air_quality_pipeline' retrieved from /opt/airflow/dags/spark_pipeline_dag.py
+[2026-08-09T02:37:50.201+0000] {logging_mixin.py:188} INFO - [2026-08-09T02:37:50.200+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-08-09T02:37:50.231+0000] {logging_mixin.py:188} INFO - [2026-08-09T02:37:50.231+0000] {dag.py:3823} INFO - Setting next_dagrun for air_quality_pipeline to 2026-08-09 02:05:00+00:00, run_after=2026-08-09 03:05:00+00:00
+[2026-08-09T02:37:50.255+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/spark_pipeline_dag.py took 0.140 seconds
+[2026-08-09T02:38:20.647+0000] {processor.py:161} INFO - Started process (PID=19873) to work on /opt/airflow/dags/spark_pipeline_dag.py
+[2026-08-09T02:38:20.649+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/spark_pipeline_dag.py for tasks to queue
+[2026-08-09T02:38:20.650+0000] {logging_mixin.py:188} INFO - [2026-08-09T02:38:20.649+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/spark_pipeline_dag.py
+[2026-08-09T02:38:20.667+0000] {processor.py:840} INFO - DAG(s) 'air_quality_pipeline' retrieved from /opt/airflow/dags/spark_pipeline_dag.py
+[2026-08-09T02:38:20.697+0000] {logging_mixin.py:188} INFO - [2026-08-09T02:38:20.696+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-08-09T02:38:20.720+0000] {logging_mixin.py:188} INFO - [2026-08-09T02:38:20.720+0000] {dag.py:3823} INFO - Setting next_dagrun for air_quality_pipeline to 2026-08-09 02:05:00+00:00, run_after=2026-08-09 03:05:00+00:00
+[2026-08-09T02:38:20.735+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/spark_pipeline_dag.py took 0.092 seconds
+[2026-08-09T02:38:51.064+0000] {processor.py:161} INFO - Started process (PID=19883) to work on /opt/airflow/dags/spark_pipeline_dag.py
+[2026-08-09T02:38:51.066+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/spark_pipeline_dag.py for tasks to queue
+[2026-08-09T02:38:51.067+0000] {logging_mixin.py:188} INFO - [2026-08-09T02:38:51.067+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/spark_pipeline_dag.py
+[2026-08-09T02:38:51.094+0000] {processor.py:840} INFO - DAG(s) 'air_quality_pipeline' retrieved from /opt/airflow/dags/spark_pipeline_dag.py
+[2026-08-09T02:38:51.116+0000] {logging_mixin.py:188} INFO - [2026-08-09T02:38:51.116+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-08-09T02:38:51.146+0000] {logging_mixin.py:188} INFO - [2026-08-09T02:38:51.146+0000] {dag.py:3823} INFO - Setting next_dagrun for air_quality_pipeline to 2026-08-09 02:05:00+00:00, run_after=2026-08-09 03:05:00+00:00
+[2026-08-09T02:38:51.169+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/spark_pipeline_dag.py took 0.108 seconds
+[2026-08-09T02:39:21.548+0000] {processor.py:161} INFO - Started process (PID=19893) to work on /opt/airflow/dags/spark_pipeline_dag.py
+[2026-08-09T02:39:21.551+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/spark_pipeline_dag.py for tasks to queue
+[2026-08-09T02:39:21.554+0000] {logging_mixin.py:188} INFO - [2026-08-09T02:39:21.553+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/spark_pipeline_dag.py
+[2026-08-09T02:39:21.595+0000] {processor.py:840} INFO - DAG(s) 'air_quality_pipeline' retrieved from /opt/airflow/dags/spark_pipeline_dag.py
+[2026-08-09T02:39:21.649+0000] {logging_mixin.py:188} INFO - [2026-08-09T02:39:21.649+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-08-09T02:39:21.684+0000] {logging_mixin.py:188} INFO - [2026-08-09T02:39:21.684+0000] {dag.py:3823} INFO - Setting next_dagrun for air_quality_pipeline to 2026-08-09 02:05:00+00:00, run_after=2026-08-09 03:05:00+00:00
+[2026-08-09T02:39:21.712+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/spark_pipeline_dag.py took 0.173 seconds
+[2026-08-09T02:39:52.020+0000] {processor.py:161} INFO - Started process (PID=19903) to work on /opt/airflow/dags/spark_pipeline_dag.py
+[2026-08-09T02:39:52.022+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/spark_pipeline_dag.py for tasks to queue
+[2026-08-09T02:39:52.023+0000] {logging_mixin.py:188} INFO - [2026-08-09T02:39:52.023+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/spark_pipeline_dag.py
+[2026-08-09T02:39:52.073+0000] {processor.py:840} INFO - DAG(s) 'air_quality_pipeline' retrieved from /opt/airflow/dags/spark_pipeline_dag.py
+[2026-08-09T02:39:52.098+0000] {logging_mixin.py:188} INFO - [2026-08-09T02:39:52.098+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-08-09T02:39:52.118+0000] {logging_mixin.py:188} INFO - [2026-08-09T02:39:52.118+0000] {dag.py:3823} INFO - Setting next_dagrun for air_quality_pipeline to 2026-08-09 02:05:00+00:00, run_after=2026-08-09 03:05:00+00:00
+[2026-08-09T02:39:52.138+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/spark_pipeline_dag.py took 0.121 seconds
+[2026-08-09T02:40:22.390+0000] {processor.py:161} INFO - Started process (PID=19913) to work on /opt/airflow/dags/spark_pipeline_dag.py
+[2026-08-09T02:40:22.392+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/spark_pipeline_dag.py for tasks to queue
+[2026-08-09T02:40:22.395+0000] {logging_mixin.py:188} INFO - [2026-08-09T02:40:22.392+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/spark_pipeline_dag.py
+[2026-08-09T02:40:22.414+0000] {processor.py:840} INFO - DAG(s) 'air_quality_pipeline' retrieved from /opt/airflow/dags/spark_pipeline_dag.py
+[2026-08-09T02:40:22.440+0000] {logging_mixin.py:188} INFO - [2026-08-09T02:40:22.440+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-08-09T02:40:22.465+0000] {logging_mixin.py:188} INFO - [2026-08-09T02:40:22.464+0000] {dag.py:3823} INFO - Setting next_dagrun for air_quality_pipeline to 2026-08-09 02:05:00+00:00, run_after=2026-08-09 03:05:00+00:00
+[2026-08-09T02:40:22.510+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/spark_pipeline_dag.py took 0.125 seconds
+[2026-08-09T02:40:52.836+0000] {processor.py:161} INFO - Started process (PID=19923) to work on /opt/airflow/dags/spark_pipeline_dag.py
+[2026-08-09T02:40:52.837+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/spark_pipeline_dag.py for tasks to queue
+[2026-08-09T02:40:52.839+0000] {logging_mixin.py:188} INFO - [2026-08-09T02:40:52.839+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/spark_pipeline_dag.py
+[2026-08-09T02:40:52.864+0000] {processor.py:840} INFO - DAG(s) 'air_quality_pipeline' retrieved from /opt/airflow/dags/spark_pipeline_dag.py
+[2026-08-09T02:40:52.883+0000] {logging_mixin.py:188} INFO - [2026-08-09T02:40:52.883+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-08-09T02:40:52.902+0000] {logging_mixin.py:188} INFO - [2026-08-09T02:40:52.902+0000] {dag.py:3823} INFO - Setting next_dagrun for air_quality_pipeline to 2026-08-09 02:05:00+00:00, run_after=2026-08-09 03:05:00+00:00
+[2026-08-09T02:40:52.922+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/spark_pipeline_dag.py took 0.089 seconds
+[2026-08-09T02:41:23.313+0000] {processor.py:161} INFO - Started process (PID=19933) to work on /opt/airflow/dags/spark_pipeline_dag.py
+[2026-08-09T02:41:23.315+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/spark_pipeline_dag.py for tasks to queue
+[2026-08-09T02:41:23.316+0000] {logging_mixin.py:188} INFO - [2026-08-09T02:41:23.315+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/spark_pipeline_dag.py
+[2026-08-09T02:41:23.348+0000] {processor.py:840} INFO - DAG(s) 'air_quality_pipeline' retrieved from /opt/airflow/dags/spark_pipeline_dag.py
+[2026-08-09T02:41:23.370+0000] {logging_mixin.py:188} INFO - [2026-08-09T02:41:23.370+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-08-09T02:41:23.393+0000] {logging_mixin.py:188} INFO - [2026-08-09T02:41:23.393+0000] {dag.py:3823} INFO - Setting next_dagrun for air_quality_pipeline to 2026-08-09 02:05:00+00:00, run_after=2026-08-09 03:05:00+00:00
+[2026-08-09T02:41:23.415+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/spark_pipeline_dag.py took 0.104 seconds
+[2026-08-09T02:41:53.781+0000] {processor.py:161} INFO - Started process (PID=19943) to work on /opt/airflow/dags/spark_pipeline_dag.py
+[2026-08-09T02:41:53.785+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/spark_pipeline_dag.py for tasks to queue
+[2026-08-09T02:41:53.791+0000] {logging_mixin.py:188} INFO - [2026-08-09T02:41:53.788+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/spark_pipeline_dag.py
+[2026-08-09T02:41:53.827+0000] {processor.py:840} INFO - DAG(s) 'air_quality_pipeline' retrieved from /opt/airflow/dags/spark_pipeline_dag.py
+[2026-08-09T02:41:53.853+0000] {logging_mixin.py:188} INFO - [2026-08-09T02:41:53.852+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-08-09T02:41:53.884+0000] {logging_mixin.py:188} INFO - [2026-08-09T02:41:53.884+0000] {dag.py:3823} INFO - Setting next_dagrun for air_quality_pipeline to 2026-08-09 02:05:00+00:00, run_after=2026-08-09 03:05:00+00:00
+[2026-08-09T02:41:53.910+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/spark_pipeline_dag.py took 0.133 seconds
+[2026-08-09T02:42:24.253+0000] {processor.py:161} INFO - Started process (PID=19953) to work on /opt/airflow/dags/spark_pipeline_dag.py
+[2026-08-09T02:42:24.254+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/spark_pipeline_dag.py for tasks to queue
+[2026-08-09T02:42:24.255+0000] {logging_mixin.py:188} INFO - [2026-08-09T02:42:24.255+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/spark_pipeline_dag.py
+[2026-08-09T02:42:24.276+0000] {processor.py:840} INFO - DAG(s) 'air_quality_pipeline' retrieved from /opt/airflow/dags/spark_pipeline_dag.py
+[2026-08-09T02:42:24.305+0000] {logging_mixin.py:188} INFO - [2026-08-09T02:42:24.305+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-08-09T02:42:24.326+0000] {logging_mixin.py:188} INFO - [2026-08-09T02:42:24.326+0000] {dag.py:3823} INFO - Setting next_dagrun for air_quality_pipeline to 2026-08-09 02:05:00+00:00, run_after=2026-08-09 03:05:00+00:00
+[2026-08-09T02:42:24.371+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/spark_pipeline_dag.py took 0.121 seconds
+[2026-08-09T02:42:54.683+0000] {processor.py:161} INFO - Started process (PID=19963) to work on /opt/airflow/dags/spark_pipeline_dag.py
+[2026-08-09T02:42:54.685+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/spark_pipeline_dag.py for tasks to queue
+[2026-08-09T02:42:54.690+0000] {logging_mixin.py:188} INFO - [2026-08-09T02:42:54.690+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/spark_pipeline_dag.py
+[2026-08-09T02:42:54.722+0000] {processor.py:840} INFO - DAG(s) 'air_quality_pipeline' retrieved from /opt/airflow/dags/spark_pipeline_dag.py
+[2026-08-09T02:42:54.756+0000] {logging_mixin.py:188} INFO - [2026-08-09T02:42:54.756+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-08-09T02:42:54.788+0000] {logging_mixin.py:188} INFO - [2026-08-09T02:42:54.788+0000] {dag.py:3823} INFO - Setting next_dagrun for air_quality_pipeline to 2026-08-09 02:05:00+00:00, run_after=2026-08-09 03:05:00+00:00
+[2026-08-09T02:42:54.806+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/spark_pipeline_dag.py took 0.127 seconds
+[2026-08-09T02:43:25.058+0000] {processor.py:161} INFO - Started process (PID=19973) to work on /opt/airflow/dags/spark_pipeline_dag.py
+[2026-08-09T02:43:25.060+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/spark_pipeline_dag.py for tasks to queue
+[2026-08-09T02:43:25.061+0000] {logging_mixin.py:188} INFO - [2026-08-09T02:43:25.061+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/spark_pipeline_dag.py
+[2026-08-09T02:43:25.087+0000] {processor.py:840} INFO - DAG(s) 'air_quality_pipeline' retrieved from /opt/airflow/dags/spark_pipeline_dag.py
+[2026-08-09T02:43:25.111+0000] {logging_mixin.py:188} INFO - [2026-08-09T02:43:25.111+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-08-09T02:43:25.133+0000] {logging_mixin.py:188} INFO - [2026-08-09T02:43:25.133+0000] {dag.py:3823} INFO - Setting next_dagrun for air_quality_pipeline to 2026-08-09 02:05:00+00:00, run_after=2026-08-09 03:05:00+00:00
+[2026-08-09T02:43:25.174+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/spark_pipeline_dag.py took 0.119 seconds
+[2026-08-09T02:43:55.462+0000] {processor.py:161} INFO - Started process (PID=19983) to work on /opt/airflow/dags/spark_pipeline_dag.py
+[2026-08-09T02:43:55.463+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/spark_pipeline_dag.py for tasks to queue
+[2026-08-09T02:43:55.465+0000] {logging_mixin.py:188} INFO - [2026-08-09T02:43:55.465+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/spark_pipeline_dag.py
+[2026-08-09T02:43:55.489+0000] {processor.py:840} INFO - DAG(s) 'air_quality_pipeline' retrieved from /opt/airflow/dags/spark_pipeline_dag.py
+[2026-08-09T02:43:55.519+0000] {logging_mixin.py:188} INFO - [2026-08-09T02:43:55.519+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-08-09T02:43:55.551+0000] {logging_mixin.py:188} INFO - [2026-08-09T02:43:55.551+0000] {dag.py:3823} INFO - Setting next_dagrun for air_quality_pipeline to 2026-08-09 02:05:00+00:00, run_after=2026-08-09 03:05:00+00:00
+[2026-08-09T02:43:55.611+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/spark_pipeline_dag.py took 0.153 seconds
+[2026-08-09T02:44:26.013+0000] {processor.py:161} INFO - Started process (PID=19993) to work on /opt/airflow/dags/spark_pipeline_dag.py
+[2026-08-09T02:44:26.014+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/spark_pipeline_dag.py for tasks to queue
+[2026-08-09T02:44:26.015+0000] {logging_mixin.py:188} INFO - [2026-08-09T02:44:26.015+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/spark_pipeline_dag.py
+[2026-08-09T02:44:26.055+0000] {processor.py:840} INFO - DAG(s) 'air_quality_pipeline' retrieved from /opt/airflow/dags/spark_pipeline_dag.py
+[2026-08-09T02:44:26.087+0000] {logging_mixin.py:188} INFO - [2026-08-09T02:44:26.086+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-08-09T02:44:26.117+0000] {logging_mixin.py:188} INFO - [2026-08-09T02:44:26.116+0000] {dag.py:3823} INFO - Setting next_dagrun for air_quality_pipeline to 2026-08-09 02:05:00+00:00, run_after=2026-08-09 03:05:00+00:00
+[2026-08-09T02:44:26.170+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/spark_pipeline_dag.py took 0.161 seconds
+[2026-08-09T02:44:56.499+0000] {processor.py:161} INFO - Started process (PID=20003) to work on /opt/airflow/dags/spark_pipeline_dag.py
+[2026-08-09T02:44:56.500+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/spark_pipeline_dag.py for tasks to queue
+[2026-08-09T02:44:56.501+0000] {logging_mixin.py:188} INFO - [2026-08-09T02:44:56.501+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/spark_pipeline_dag.py
+[2026-08-09T02:44:56.527+0000] {processor.py:840} INFO - DAG(s) 'air_quality_pipeline' retrieved from /opt/airflow/dags/spark_pipeline_dag.py
+[2026-08-09T02:44:56.549+0000] {logging_mixin.py:188} INFO - [2026-08-09T02:44:56.548+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-08-09T02:44:56.568+0000] {logging_mixin.py:188} INFO - [2026-08-09T02:44:56.568+0000] {dag.py:3823} INFO - Setting next_dagrun for air_quality_pipeline to 2026-08-09 02:05:00+00:00, run_after=2026-08-09 03:05:00+00:00
+[2026-08-09T02:44:56.593+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/spark_pipeline_dag.py took 0.098 seconds
+[2026-08-09T02:45:26.912+0000] {processor.py:161} INFO - Started process (PID=20013) to work on /opt/airflow/dags/spark_pipeline_dag.py
+[2026-08-09T02:45:26.944+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/spark_pipeline_dag.py for tasks to queue
+[2026-08-09T02:45:26.949+0000] {logging_mixin.py:188} INFO - [2026-08-09T02:45:26.948+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/spark_pipeline_dag.py
+[2026-08-09T02:45:26.998+0000] {processor.py:840} INFO - DAG(s) 'air_quality_pipeline' retrieved from /opt/airflow/dags/spark_pipeline_dag.py
+[2026-08-09T02:45:27.031+0000] {logging_mixin.py:188} INFO - [2026-08-09T02:45:27.031+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-08-09T02:45:27.073+0000] {logging_mixin.py:188} INFO - [2026-08-09T02:45:27.073+0000] {dag.py:3823} INFO - Setting next_dagrun for air_quality_pipeline to 2026-08-09 02:05:00+00:00, run_after=2026-08-09 03:05:00+00:00
+[2026-08-09T02:45:27.128+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/spark_pipeline_dag.py took 0.220 seconds
+[2026-08-09T02:45:57.521+0000] {processor.py:161} INFO - Started process (PID=20023) to work on /opt/airflow/dags/spark_pipeline_dag.py
+[2026-08-09T02:45:57.525+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/spark_pipeline_dag.py for tasks to queue
+[2026-08-09T02:45:57.529+0000] {logging_mixin.py:188} INFO - [2026-08-09T02:45:57.528+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/spark_pipeline_dag.py
+[2026-08-09T02:45:57.591+0000] {processor.py:840} INFO - DAG(s) 'air_quality_pipeline' retrieved from /opt/airflow/dags/spark_pipeline_dag.py
+[2026-08-09T02:45:57.639+0000] {logging_mixin.py:188} INFO - [2026-08-09T02:45:57.638+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-08-09T02:45:57.681+0000] {logging_mixin.py:188} INFO - [2026-08-09T02:45:57.681+0000] {dag.py:3823} INFO - Setting next_dagrun for air_quality_pipeline to 2026-08-09 02:05:00+00:00, run_after=2026-08-09 03:05:00+00:00
+[2026-08-09T02:45:57.705+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/spark_pipeline_dag.py took 0.189 seconds
+[2026-08-09T02:46:28.054+0000] {processor.py:161} INFO - Started process (PID=20033) to work on /opt/airflow/dags/spark_pipeline_dag.py
+[2026-08-09T02:46:28.056+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/spark_pipeline_dag.py for tasks to queue
+[2026-08-09T02:46:28.057+0000] {logging_mixin.py:188} INFO - [2026-08-09T02:46:28.056+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/spark_pipeline_dag.py
+[2026-08-09T02:46:28.084+0000] {processor.py:840} INFO - DAG(s) 'air_quality_pipeline' retrieved from /opt/airflow/dags/spark_pipeline_dag.py
+[2026-08-09T02:46:28.106+0000] {logging_mixin.py:188} INFO - [2026-08-09T02:46:28.106+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-08-09T02:46:28.126+0000] {logging_mixin.py:188} INFO - [2026-08-09T02:46:28.126+0000] {dag.py:3823} INFO - Setting next_dagrun for air_quality_pipeline to 2026-08-09 02:05:00+00:00, run_after=2026-08-09 03:05:00+00:00
+[2026-08-09T02:46:28.148+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/spark_pipeline_dag.py took 0.096 seconds
+[2026-08-09T02:46:58.557+0000] {processor.py:161} INFO - Started process (PID=20043) to work on /opt/airflow/dags/spark_pipeline_dag.py
+[2026-08-09T02:46:58.558+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/spark_pipeline_dag.py for tasks to queue
+[2026-08-09T02:46:58.559+0000] {logging_mixin.py:188} INFO - [2026-08-09T02:46:58.559+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/spark_pipeline_dag.py
+[2026-08-09T02:46:58.581+0000] {processor.py:840} INFO - DAG(s) 'air_quality_pipeline' retrieved from /opt/airflow/dags/spark_pipeline_dag.py
+[2026-08-09T02:46:58.597+0000] {logging_mixin.py:188} INFO - [2026-08-09T02:46:58.597+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-08-09T02:46:58.615+0000] {logging_mixin.py:188} INFO - [2026-08-09T02:46:58.615+0000] {dag.py:3823} INFO - Setting next_dagrun for air_quality_pipeline to 2026-08-09 02:05:00+00:00, run_after=2026-08-09 03:05:00+00:00
+[2026-08-09T02:46:58.631+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/spark_pipeline_dag.py took 0.076 seconds
+[2026-08-09T02:47:29.038+0000] {processor.py:161} INFO - Started process (PID=20053) to work on /opt/airflow/dags/spark_pipeline_dag.py
+[2026-08-09T02:47:29.039+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/spark_pipeline_dag.py for tasks to queue
+[2026-08-09T02:47:29.040+0000] {logging_mixin.py:188} INFO - [2026-08-09T02:47:29.040+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/spark_pipeline_dag.py
+[2026-08-09T02:47:29.064+0000] {processor.py:840} INFO - DAG(s) 'air_quality_pipeline' retrieved from /opt/airflow/dags/spark_pipeline_dag.py
+[2026-08-09T02:47:29.083+0000] {logging_mixin.py:188} INFO - [2026-08-09T02:47:29.082+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-08-09T02:47:29.102+0000] {logging_mixin.py:188} INFO - [2026-08-09T02:47:29.102+0000] {dag.py:3823} INFO - Setting next_dagrun for air_quality_pipeline to 2026-08-09 02:05:00+00:00, run_after=2026-08-09 03:05:00+00:00
+[2026-08-09T02:47:29.119+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/spark_pipeline_dag.py took 0.087 seconds
+[2026-08-09T02:47:59.511+0000] {processor.py:161} INFO - Started process (PID=20063) to work on /opt/airflow/dags/spark_pipeline_dag.py
+[2026-08-09T02:47:59.513+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/spark_pipeline_dag.py for tasks to queue
+[2026-08-09T02:47:59.514+0000] {logging_mixin.py:188} INFO - [2026-08-09T02:47:59.514+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/spark_pipeline_dag.py
+[2026-08-09T02:47:59.551+0000] {processor.py:840} INFO - DAG(s) 'air_quality_pipeline' retrieved from /opt/airflow/dags/spark_pipeline_dag.py
+[2026-08-09T02:47:59.586+0000] {logging_mixin.py:188} INFO - [2026-08-09T02:47:59.586+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-08-09T02:47:59.621+0000] {logging_mixin.py:188} INFO - [2026-08-09T02:47:59.621+0000] {dag.py:3823} INFO - Setting next_dagrun for air_quality_pipeline to 2026-08-09 02:05:00+00:00, run_after=2026-08-09 03:05:00+00:00
+[2026-08-09T02:47:59.649+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/spark_pipeline_dag.py took 0.141 seconds
+[2026-08-09T02:48:29.991+0000] {processor.py:161} INFO - Started process (PID=20073) to work on /opt/airflow/dags/spark_pipeline_dag.py
+[2026-08-09T02:48:29.993+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/spark_pipeline_dag.py for tasks to queue
+[2026-08-09T02:48:29.996+0000] {logging_mixin.py:188} INFO - [2026-08-09T02:48:29.995+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/spark_pipeline_dag.py
+[2026-08-09T02:48:30.045+0000] {processor.py:840} INFO - DAG(s) 'air_quality_pipeline' retrieved from /opt/airflow/dags/spark_pipeline_dag.py
+[2026-08-09T02:48:30.074+0000] {logging_mixin.py:188} INFO - [2026-08-09T02:48:30.074+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-08-09T02:48:30.104+0000] {logging_mixin.py:188} INFO - [2026-08-09T02:48:30.104+0000] {dag.py:3823} INFO - Setting next_dagrun for air_quality_pipeline to 2026-08-09 02:05:00+00:00, run_after=2026-08-09 03:05:00+00:00
+[2026-08-09T02:48:30.121+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/spark_pipeline_dag.py took 0.133 seconds
+[2026-08-09T02:49:00.464+0000] {processor.py:161} INFO - Started process (PID=20083) to work on /opt/airflow/dags/spark_pipeline_dag.py
+[2026-08-09T02:49:00.466+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/spark_pipeline_dag.py for tasks to queue
+[2026-08-09T02:49:00.476+0000] {logging_mixin.py:188} INFO - [2026-08-09T02:49:00.475+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/spark_pipeline_dag.py
+[2026-08-09T02:49:00.530+0000] {processor.py:840} INFO - DAG(s) 'air_quality_pipeline' retrieved from /opt/airflow/dags/spark_pipeline_dag.py
+[2026-08-09T02:49:00.557+0000] {logging_mixin.py:188} INFO - [2026-08-09T02:49:00.557+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-08-09T02:49:00.583+0000] {logging_mixin.py:188} INFO - [2026-08-09T02:49:00.583+0000] {dag.py:3823} INFO - Setting next_dagrun for air_quality_pipeline to 2026-08-09 02:05:00+00:00, run_after=2026-08-09 03:05:00+00:00
+[2026-08-09T02:49:00.606+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/spark_pipeline_dag.py took 0.147 seconds
+[2026-08-09T02:49:30.915+0000] {processor.py:161} INFO - Started process (PID=20093) to work on /opt/airflow/dags/spark_pipeline_dag.py
+[2026-08-09T02:49:30.917+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/spark_pipeline_dag.py for tasks to queue
+[2026-08-09T02:49:30.918+0000] {logging_mixin.py:188} INFO - [2026-08-09T02:49:30.918+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/spark_pipeline_dag.py
+[2026-08-09T02:49:30.938+0000] {processor.py:840} INFO - DAG(s) 'air_quality_pipeline' retrieved from /opt/airflow/dags/spark_pipeline_dag.py
+[2026-08-09T02:49:30.963+0000] {logging_mixin.py:188} INFO - [2026-08-09T02:49:30.963+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-08-09T02:49:30.988+0000] {logging_mixin.py:188} INFO - [2026-08-09T02:49:30.988+0000] {dag.py:3823} INFO - Setting next_dagrun for air_quality_pipeline to 2026-08-09 02:05:00+00:00, run_after=2026-08-09 03:05:00+00:00
+[2026-08-09T02:49:31.005+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/spark_pipeline_dag.py took 0.093 seconds
+[2026-08-09T02:50:01.377+0000] {processor.py:161} INFO - Started process (PID=20103) to work on /opt/airflow/dags/spark_pipeline_dag.py
+[2026-08-09T02:50:01.379+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/spark_pipeline_dag.py for tasks to queue
+[2026-08-09T02:50:01.380+0000] {logging_mixin.py:188} INFO - [2026-08-09T02:50:01.380+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/spark_pipeline_dag.py
+[2026-08-09T02:50:01.409+0000] {processor.py:840} INFO - DAG(s) 'air_quality_pipeline' retrieved from /opt/airflow/dags/spark_pipeline_dag.py
+[2026-08-09T02:50:01.438+0000] {logging_mixin.py:188} INFO - [2026-08-09T02:50:01.438+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-08-09T02:50:01.465+0000] {logging_mixin.py:188} INFO - [2026-08-09T02:50:01.465+0000] {dag.py:3823} INFO - Setting next_dagrun for air_quality_pipeline to 2026-08-09 02:05:00+00:00, run_after=2026-08-09 03:05:00+00:00
+[2026-08-09T02:50:01.485+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/spark_pipeline_dag.py took 0.112 seconds
+[2026-08-09T02:59:36.665+0000] {processor.py:161} INFO - Started process (PID=20113) to work on /opt/airflow/dags/spark_pipeline_dag.py
+[2026-08-09T02:59:36.674+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/spark_pipeline_dag.py for tasks to queue
+[2026-08-09T02:59:36.684+0000] {logging_mixin.py:188} INFO - [2026-08-09T02:59:36.682+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/spark_pipeline_dag.py
+[2026-08-09T02:59:36.900+0000] {processor.py:840} INFO - DAG(s) 'air_quality_pipeline' retrieved from /opt/airflow/dags/spark_pipeline_dag.py
+[2026-08-09T02:59:37.040+0000] {logging_mixin.py:188} INFO - [2026-08-09T02:59:37.039+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-08-09T02:59:37.223+0000] {logging_mixin.py:188} INFO - [2026-08-09T02:59:37.223+0000] {dag.py:3823} INFO - Setting next_dagrun for air_quality_pipeline to 2026-08-09 02:05:00+00:00, run_after=2026-08-09 03:05:00+00:00
+[2026-08-09T02:59:37.339+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/spark_pipeline_dag.py took 0.690 seconds
+[2026-08-09T03:55:20.734+0000] {processor.py:161} INFO - Started process (PID=20129) to work on /opt/airflow/dags/spark_pipeline_dag.py
+[2026-08-09T03:55:20.748+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/spark_pipeline_dag.py for tasks to queue
+[2026-08-09T03:55:20.758+0000] {logging_mixin.py:188} INFO - [2026-08-09T03:55:20.757+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/spark_pipeline_dag.py
+[2026-08-09T03:55:20.963+0000] {processor.py:840} INFO - DAG(s) 'air_quality_pipeline' retrieved from /opt/airflow/dags/spark_pipeline_dag.py
+[2026-08-09T03:55:21.119+0000] {logging_mixin.py:188} INFO - [2026-08-09T03:55:21.110+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-08-09T03:55:21.300+0000] {logging_mixin.py:188} INFO - [2026-08-09T03:55:21.299+0000] {dag.py:3823} INFO - Setting next_dagrun for air_quality_pipeline to 2026-08-09 03:05:00+00:00, run_after=2026-08-09 04:05:00+00:00
+[2026-08-09T03:55:21.446+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/spark_pipeline_dag.py took 0.729 seconds
+[2026-08-09T11:06:31.540+0000] {processor.py:161} INFO - Started process (PID=20147) to work on /opt/airflow/dags/spark_pipeline_dag.py
+[2026-08-09T11:06:31.556+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/spark_pipeline_dag.py for tasks to queue
+[2026-08-09T11:06:31.561+0000] {logging_mixin.py:188} INFO - [2026-08-09T11:06:31.560+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/spark_pipeline_dag.py
+[2026-08-09T11:06:31.717+0000] {processor.py:840} INFO - DAG(s) 'air_quality_pipeline' retrieved from /opt/airflow/dags/spark_pipeline_dag.py
+[2026-08-09T11:06:31.848+0000] {logging_mixin.py:188} INFO - [2026-08-09T11:06:31.847+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-08-09T11:06:32.015+0000] {logging_mixin.py:188} INFO - [2026-08-09T11:06:32.014+0000] {dag.py:3823} INFO - Setting next_dagrun for air_quality_pipeline to 2026-08-09 11:05:00+00:00, run_after=2026-08-09 12:05:00+00:00
+[2026-08-09T11:06:32.165+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/spark_pipeline_dag.py took 0.633 seconds
+[2026-08-09T11:06:32.423+0000] {processor.py:161} INFO - Started process (PID=20155) to work on /opt/airflow/dags/spark_pipeline_dag.py
+[2026-08-09T11:06:32.430+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/spark_pipeline_dag.py for tasks to queue
+[2026-08-09T11:06:32.443+0000] {logging_mixin.py:188} INFO - [2026-08-09T11:06:32.442+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/spark_pipeline_dag.py
+[2026-08-09T11:06:32.669+0000] {processor.py:840} INFO - DAG(s) 'air_quality_pipeline' retrieved from /opt/airflow/dags/spark_pipeline_dag.py
+[2026-08-09T11:06:32.831+0000] {logging_mixin.py:188} INFO - [2026-08-09T11:06:32.830+0000] {taskinstance.py:2700} ERROR - {'DAG Id': 'air_quality_pipeline', 'Task Id': 'wait_for_ingestion', 'Run Id': 'scheduled__2026-08-09T02:05:00+00:00', 'Hostname': '6a0525c4c718'}
+[2026-08-09T11:06:32.949+0000] {logging_mixin.py:188} INFO - [2026-08-09T11:06:32.948+0000] {taskinstance.py:1138} INFO - Marking task as UP_FOR_RETRY. dag_id=air_quality_pipeline, task_id=wait_for_ingestion, execution_date=20260809T020500, start_date=20260809T035521, end_date=20260809T110632
+[2026-08-09T11:06:32.997+0000] {processor.py:791} INFO - Executed failure callback for <TaskInstance: air_quality_pipeline.wait_for_ingestion scheduled__2026-08-09T02:05:00+00:00 [up_for_retry]> in state up_for_retry
+[2026-08-09T11:06:33.089+0000] {logging_mixin.py:188} INFO - [2026-08-09T11:06:33.088+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-08-09T11:06:33.219+0000] {logging_mixin.py:188} INFO - [2026-08-09T11:06:33.218+0000] {dag.py:3823} INFO - Setting next_dagrun for air_quality_pipeline to 2026-08-09 11:05:00+00:00, run_after=2026-08-09 12:05:00+00:00
+[2026-08-09T11:06:33.324+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/spark_pipeline_dag.py took 0.922 seconds

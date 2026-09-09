@@ -1,0 +1,18 @@
+[2026-08-01T05:00:00.956+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: air_quality_ingestion.ingest_to_bronze scheduled__2026-08-01T04:00:00+00:00 [queued]>
+[2026-08-01T05:00:00.964+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: air_quality_ingestion.ingest_to_bronze scheduled__2026-08-01T04:00:00+00:00 [queued]>
+[2026-08-01T05:00:00.965+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 4
+[2026-08-01T05:00:00.979+0000] {taskinstance.py:2191} INFO - Executing <Task(PythonOperator): ingest_to_bronze> on 2026-08-01 04:00:00+00:00
+[2026-08-01T05:00:00.985+0000] {standard_task_runner.py:60} INFO - Started process 2317 to run task
+[2026-08-01T05:00:00.988+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'air_quality_ingestion', 'ingest_to_bronze', 'scheduled__2026-08-01T04:00:00+00:00', '--job-id', '19', '--raw', '--subdir', 'DAGS_FOLDER/ingestion_dag.py', '--cfg-path', '/tmp/tmpl3_85a3h']
+[2026-08-01T05:00:00.990+0000] {standard_task_runner.py:88} INFO - Job 19: Subtask ingest_to_bronze
+[2026-08-01T05:00:01.059+0000] {task_command.py:423} INFO - Running <TaskInstance: air_quality_ingestion.ingest_to_bronze scheduled__2026-08-01T04:00:00+00:00 [running]> on host cd53ba4eefa8
+[2026-08-01T05:00:01.132+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='air_quality_ingestion' AIRFLOW_CTX_TASK_ID='ingest_to_bronze' AIRFLOW_CTX_EXECUTION_DATE='2026-08-01T04:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2026-08-01T04:00:00+00:00'
+[2026-08-01T05:00:01.298+0000] {logging_mixin.py:188} INFO - Created bucket: bronze-air-quality
+[2026-08-01T05:00:01.303+0000] {logging_mixin.py:188} INFO - Created bucket: silver-air-quality
+[2026-08-01T05:00:01.310+0000] {logging_mixin.py:188} INFO - Created bucket: gold-air-quality
+[2026-08-01T05:00:05.307+0000] {logging_mixin.py:188} INFO - 
+Total records ingested: 0
+[2026-08-01T05:00:05.309+0000] {python.py:201} INFO - Done. Returned value was: None
+[2026-08-01T05:00:05.326+0000] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=air_quality_ingestion, task_id=ingest_to_bronze, execution_date=20260801T040000, start_date=20260801T050000, end_date=20260801T050005
+[2026-08-01T05:00:05.352+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2026-08-01T05:00:05.378+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check

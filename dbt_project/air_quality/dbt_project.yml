@@ -1,0 +1,15 @@
+name: 'air_quality'
+version: '1.0.0'
+config-version: 2
+
+profile: 'air_quality'
+
+model-paths: ["models"]
+test-paths: ["tests"]
+
+models:
+  air_quality:
+    silver:
+      +materialized: table
+    gold:
+      +materialized: table
