@@ -1,0 +1,10 @@
+[2026-09-10T00:05:17.591+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: air_quality_pipeline.wait_for_ingestion manual__2026-09-10T00:05:16.281793+00:00 [queued]>
+[2026-09-10T00:05:17.609+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: air_quality_pipeline.wait_for_ingestion manual__2026-09-10T00:05:16.281793+00:00 [queued]>
+[2026-09-10T00:05:17.610+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 3
+[2026-09-10T00:05:17.635+0000] {taskinstance.py:2191} INFO - Executing <Task(ExternalTaskSensor): wait_for_ingestion> on 2026-09-10 00:05:16.281793+00:00
+[2026-09-10T00:05:17.649+0000] {standard_task_runner.py:60} INFO - Started process 301 to run task
+[2026-09-10T00:05:17.700+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'air_quality_pipeline', 'wait_for_ingestion', 'manual__2026-09-10T00:05:16.281793+00:00', '--job-id', '775', '--raw', '--subdir', 'DAGS_FOLDER/spark_pipeline_dag.py', '--cfg-path', '/tmp/tmpz5sfu2fh']
+[2026-09-10T00:05:17.724+0000] {standard_task_runner.py:88} INFO - Job 775: Subtask wait_for_ingestion
+[2026-09-10T00:05:18.004+0000] {task_command.py:423} INFO - Running <TaskInstance: air_quality_pipeline.wait_for_ingestion manual__2026-09-10T00:05:16.281793+00:00 [running]> on host 54710e993fc4
+[2026-09-10T00:05:18.221+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='air_quality_pipeline' AIRFLOW_CTX_TASK_ID='wait_for_ingestion' AIRFLOW_CTX_EXECUTION_DATE='2026-09-10T00:05:16.281793+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-09-10T00:05:16.281793+00:00'
+[2026-09-10T00:05:18.224+0000] {external_task.py:244} INFO - Poking for tasks ['ingest_to_bronze'] in dag air_quality_ingestion on 2026-09-10T00:05:16.281793+00:00 ... 

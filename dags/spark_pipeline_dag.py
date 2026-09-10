@@ -12,7 +12,7 @@ default_args = {
 }
 
 def run_silver(**context):
-    from silver_transform import run
+    from self_healer import run
     run()
 
 def run_gold(**context):
