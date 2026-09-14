@@ -7,3 +7,5 @@ data/processed/
 data/features/
 *.egg-info/
 models/
+
+.env
