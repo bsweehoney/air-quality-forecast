@@ -9,24 +9,47 @@ CITIES = ["new york", "london", "beijing", "delhi", "sydney"]
 
 def fetch_aqi(city: str) -> dict:
     url = f"https://api.waqi.info/feed/{city}/?token={AQICN_KEY}"
-    r = requests.get(url, timeout=10)
-    r.raise_for_status()
-    data = r.json()
-    if data["status"] != "ok":
-        return {}
-    d = data["data"]
-    iaqi = d.get("iaqi", {})
-    return {
-        "city":      city,
-        "timestamp": datetime.utcnow().isoformat(),
-        "aqi":       d.get("aqi"),
-        "pm25":      iaqi.get("pm25", {}).get("v"),
-        "pm10":      iaqi.get("pm10", {}).get("v"),
-        "no2":       iaqi.get("no2",  {}).get("v"),
-        "o3":        iaqi.get("o3",   {}).get("v"),
-        "co":        iaqi.get("co",   {}).get("v"),
-        "so2":       iaqi.get("so2",  {}).get("v"),
-    }
+    
+    for attempt in range(1, 4):  # 3 attempts
+        try:
+            r = requests.get(url, timeout=10)
+            r.raise_for_status()
+            data = r.json()
+            if data["status"] != "ok":
+                return {}
+            d    = data["data"]
+            iaqi = d.get("iaqi", {})
+            return {
+                "city":      city,
+                "timestamp": datetime.utcnow().isoformat(),
+                "aqi":       d.get("aqi"),
+                "pm25":      iaqi.get("pm25", {}).get("v"),
+                "pm10":      iaqi.get("pm10", {}).get("v"),
+                "no2":       iaqi.get("no2",  {}).get("v"),
+                "o3":        iaqi.get("o3",   {}).get("v"),
+                "co":        iaqi.get("co",   {}).get("v"),
+                "so2":       iaqi.get("so2",  {}).get("v"),
+            }
+
+        except requests.exceptions.Timeout:
+            print(f"  [{city}] Attempt {attempt}: timed out")
+
+        except requests.exceptions.HTTPError as e:
+            print(f"  [{city}] Attempt {attempt}: HTTP {e.response.status_code}")
+
+        except requests.exceptions.ConnectionError:
+            print(f"  [{city}] Attempt {attempt}: connection failed")
+
+        except ValueError:
+            print(f"  [{city}] Attempt {attempt}: invalid JSON response")
+            return {}
+
+        wait = 2 ** attempt  # 2s, 4s, 8s
+        print(f"  [{city}] Waiting {wait}s before retry...")
+        time.sleep(wait)
+
+    print(f"  [{city}] All 3 attempts failed — skipping")
+    return {}
 
 def fake_weather(city: str) -> dict:
     """Synthetic weather until OpenWeatherMap key activates."""
