@@ -1,0 +1,8 @@
+step,tool,thought,result
+1,detect_issues,"data seems clean already, will run detect_issues to confirm","{'missing_aqi': 0, 'wrong_type_aqi': 0, 'out_of_range': 0, 'missing_city': 0, 'duplicates': 0, 'total_records': 5, 'clean_records': 5}"
+2,drop_nulls,"data is clean, but it's too good to be true, let's double-check with drop_nulls","{'missing_aqi': 0, 'wrong_type_aqi': 0, 'out_of_range': 0, 'missing_city': 0, 'duplicates': 0, 'total_records': 5, 'clean_records': 5}"
+3,detect_issues,"drop_nulls did not find any nulls, let's run detect_issues to confirm","{'missing_aqi': 0, 'wrong_type_aqi': 0, 'out_of_range': 0, 'missing_city': 0, 'duplicates': 0, 'total_records': 5, 'clean_records': 5}"
+4,fix_types,"detect_issues shows all zeros, now let's run fix_types to handle any non-AQI values","{'missing_aqi': 0, 'wrong_type_aqi': 0, 'out_of_range': 0, 'missing_city': 0, 'duplicates': 0, 'total_records': 5, 'clean_records': 5}"
+5,fix_ranges,"fix_types did not find any non-AQI values, let's run fix_ranges to cap out-of-range AQI values","{'missing_aqi': 0, 'wrong_type_aqi': 0, 'out_of_range': 0, 'missing_city': 0, 'duplicates': 0, 'total_records': 5, 'clean_records': 5}"
+6,fix_nulls,"fix_ranges did not find any out-of-range AQI values, let's run fix_nulls to impute missing AQI values","{'missing_aqi': 0, 'wrong_type_aqi': 0, 'out_of_range': 0, 'missing_city': 0, 'duplicates': 0, 'total_records': 5, 'clean_records': 5}"
+7,drop_duplicates,"fix_nulls did not find any missing AQI values, let's run drop_duplicates to remove any duplicate records","{'missing_aqi': 0, 'wrong_type_aqi': 0, 'out_of_range': 0, 'missing_city': 0, 'duplicates': 0, 'total_records': 5, 'clean_records': 5}"

@@ -1,0 +1,28 @@
+[2026-09-10T22:00:01.188+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: air_quality_ingestion.ingest_to_bronze scheduled__2026-09-10T21:00:00+00:00 [queued]>
+[2026-09-10T22:00:01.194+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: air_quality_ingestion.ingest_to_bronze scheduled__2026-09-10T21:00:00+00:00 [queued]>
+[2026-09-10T22:00:01.195+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 4
+[2026-09-10T22:00:01.206+0000] {taskinstance.py:2191} INFO - Executing <Task(PythonOperator): ingest_to_bronze> on 2026-09-10 21:00:00+00:00
+[2026-09-10T22:00:01.210+0000] {standard_task_runner.py:60} INFO - Started process 1096 to run task
+[2026-09-10T22:00:01.214+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'air_quality_ingestion', 'ingest_to_bronze', 'scheduled__2026-09-10T21:00:00+00:00', '--job-id', '829', '--raw', '--subdir', 'DAGS_FOLDER/ingestion_dag.py', '--cfg-path', '/tmp/tmpjtq6q5kj']
+[2026-09-10T22:00:01.216+0000] {standard_task_runner.py:88} INFO - Job 829: Subtask ingest_to_bronze
+[2026-09-10T22:00:01.263+0000] {task_command.py:423} INFO - Running <TaskInstance: air_quality_ingestion.ingest_to_bronze scheduled__2026-09-10T21:00:00+00:00 [running]> on host 54710e993fc4
+[2026-09-10T22:00:01.334+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='air_quality_ingestion' AIRFLOW_CTX_TASK_ID='ingest_to_bronze' AIRFLOW_CTX_EXECUTION_DATE='2026-09-10T21:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2026-09-10T21:00:00+00:00'
+[2026-09-10T22:00:01.466+0000] {logging_mixin.py:188} INFO - Created bucket: bronze-air-quality
+[2026-09-10T22:00:01.473+0000] {logging_mixin.py:188} INFO - Created bucket: silver-air-quality
+[2026-09-10T22:00:01.480+0000] {logging_mixin.py:188} INFO - Created bucket: gold-air-quality
+[2026-09-10T22:00:03.161+0000] {logging_mixin.py:188} INFO - ✓ new york: AQI=35
+[2026-09-10T22:00:04.410+0000] {logging_mixin.py:188} INFO - ✓ london: AQI=25
+[2026-09-10T22:00:05.654+0000] {logging_mixin.py:188} INFO - ✓ beijing: AQI=31
+[2026-09-10T22:00:06.627+0000] {logging_mixin.py:188} INFO - ✓ delhi: AQI=95
+[2026-09-10T22:00:07.644+0000] {logging_mixin.py:188} INFO - ✓ sydney: AQI=20
+[2026-09-10T22:00:07.681+0000] {logging_mixin.py:188} INFO - Saved → s3://bronze-air-quality/year=2026/month=09/day=10/city=new_york/220001.json
+[2026-09-10T22:00:07.692+0000] {logging_mixin.py:188} INFO - Saved → s3://bronze-air-quality/year=2026/month=09/day=10/city=london/220001.json
+[2026-09-10T22:00:07.700+0000] {logging_mixin.py:188} INFO - Saved → s3://bronze-air-quality/year=2026/month=09/day=10/city=beijing/220001.json
+[2026-09-10T22:00:07.710+0000] {logging_mixin.py:188} INFO - Saved → s3://bronze-air-quality/year=2026/month=09/day=10/city=delhi/220001.json
+[2026-09-10T22:00:07.718+0000] {logging_mixin.py:188} INFO - Saved → s3://bronze-air-quality/year=2026/month=09/day=10/city=sydney/220001.json
+[2026-09-10T22:00:07.719+0000] {logging_mixin.py:188} INFO - 
+Total records ingested: 5
+[2026-09-10T22:00:07.720+0000] {python.py:201} INFO - Done. Returned value was: None
+[2026-09-10T22:00:07.730+0000] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=air_quality_ingestion, task_id=ingest_to_bronze, execution_date=20260910T210000, start_date=20260910T220001, end_date=20260910T220007
+[2026-09-10T22:00:07.781+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2026-09-10T22:00:07.795+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check
